@@ -11,3 +11,9 @@ First I did some extra editor and formatting setup
 
 Josh is taking down notes while building the app so I will take down his notes and add anything I think I should
 See the app planning notes [HERE](./planning-notes.md)
+
+## ide.json explanation
+
+Currently, the Laravel Idea plugin in PHPStorm is not recognizing the wireui V2 components.
+
+[Temp solution here](https://github.com/laravel-idea/plugin/issues/947)

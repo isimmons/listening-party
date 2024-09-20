@@ -3,14 +3,13 @@
 use App\Models\ListeningParty;
 use Livewire\Volt\Component;
 
-new class extends Component {
+new class extends Component
+{
     public string $name = '';
+
     public datetime $startTime;
 
-    public function createListeningParty()
-    {
-
-    }
+    public function createListeningParty() {}
 
     public function with()
     {
@@ -20,6 +19,12 @@ new class extends Component {
     }
 }; ?>
 
-<div>
-    Hello World
+<div class="flex min-h-screen items-center justify-center bg-slate-100">
+    <div class="w-full max-w-lg px-4">
+        <form wire:submit="createListeningParty" class="space-y-6">
+            <x-input wire:model="name" placeholder="Listening Party Name" />
+            <x-datetime-picker wire:model="startTime" placeholder="Listening Party Start Time" />
+            <x-button primary>Create Listening Party</x-button>
+        </form>
+    </div>
 </div>
