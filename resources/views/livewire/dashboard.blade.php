@@ -19,7 +19,7 @@ new class extends Component
     }
 }; ?>
 
-<div class="flex min-h-screen items-center justify-center bg-slate-100">
+<div class="flex items-center justify-center min-h-screen bg-slate-100">
     <div class="w-full max-w-lg px-4">
         <form wire:submit="createListeningParty" class="space-y-6">
             <x-input wire:model="name" placeholder="Listening Party Name" />
